@@ -1,0 +1,153 @@
+/* Rules for app color. */
+.border-color-white { border-color: rgba(255, 255, 255, 1)!important; }
+.border-color-lightblue { border-color: rgba(241, 249, 255, 1)!important; }
+.border-color-midblue { border-color: rgba(188, 224, 253, 1)!important; }
+.border-color-blue { border-color: rgba(127, 196, 253, 1)!important; }
+.border-color-darkblue { border-color: rgba(38, 153, 251, 1)!important; }
+.border-color-red { border-color: rgba(238, 54, 51, 1)!important; }
+.border-color-green { border-color: rgba(151, 193, 70, 1)!important; }
+.border-color-deepblue { border-color: rgba(38, 76, 255, 1)!important; }
+.border-color-gray { border-color: #cccccc !important; }
+.border-color-darkpurple{ border-color: #2B1E5E !important;}
+.border-color-lightpurple{ border-color: #8074B0  !important;}
+
+.background-color-white { background-color: rgba(255, 255, 255, 1)!important; }
+.background-color-lightblue { background-color: rgba(241, 249, 255, 1)!important; }
+.background-color-midblue { background-color: rgba(188, 224, 253, 1)!important; }
+.background-color-blue { background-color: rgba(127, 196, 253, 1)!important; }
+.background-color-darkblue { background-color: rgba(38, 153, 251, 1)!important; }
+.background-color-red { background-color: rgba(238, 54, 51, 1)!important; }
+.background-color-green { background-color: rgba(151, 193, 70, 1)!important; }
+.background-color-deepblue { background-color: rgba(38, 76, 255, 1)!important; }
+.background-color-gray { background-color: #f2f2f2 !important; }
+.background-color-lightgray { background-color: #fafafa !important; }
+.background-color-navy { background-color: #1d5890 !important; }
+.background-color-lightnavy{background-color: #f1f6fa !important;}
+.background-color-darkpurple{background-color: #2B1E5E !important;}
+.background-color-lightpurple{background-color: #8074B0 !important;}
+.background-color-lightpurple-opacity{background-color: rgba( 128, 116, 176, 0.8 ) !important;}
+
+.appcolor-white { color: rgba(255, 255, 255, 1)!important; }
+.appcolor-lightblue { color: rgba(241, 249, 255, 1)!important; }
+.appcolor-midblue { color: rgba(188, 224, 253, 1)!important; }
+.appcolor-blue { color: rgba(127, 196, 253, 1)!important; }
+.appcolor-darkblue { color: rgba(38, 153, 251, 1)!important; }
+.appcolor-red { color: rgba(238, 54, 51, 1)!important; }
+.appcolor-green { color: rgba(151, 193, 70, 1)!important; }
+.appcolor-orange { color: rgba(238, 120, 0, 1)!important; }
+.appcolor-deepblue { color: rgba(38, 76, 255, 1)!important; }
+.appcolor-whitegray { color: #c5c5c5 !important; }
+.appcolor-navy{color:#1c578f !important;}
+.appcolor-dDarkgray{color:#3c3d3f !important;}
+.appcolor-darkpurple{color: #2B1E5E !important;}
+.appcolor-lightpurple{color: #8074B0 !important;}
+
+/* Rules for app font. */
+.appfont-headline {font-family:arial!important; font-size: 40pt!important; font-weight: bold!important; }
+.appfont-title {font-family:arial!important; font-size: 30pt!important; font-weight: bold!important; }
+.appfont-title-n {font-family:arial!important; font-size: 30pt!important; font-weight: unset!important; }
+.appfont-subheader {font-family:arial!important; font-size: 20pt!important; font-weight: unset!important; }
+.appfont-quote {font-family:arial!important; font-size: 20pt!important; font-style: italic!important; font-weight: unset!important; }
+.appfont-largebody {font-family:arial!important; font-size: 14pt!important; font-weight: bold!important; }
+.appfont-body {font-family:arial!important; font-size: 14pt!important; }
+.appfont-secondarybody {font-family:arial!important; font-size: 12pt!important; font-weight: unset!important; }
+.appfont-secondarybody-b {font-family:arial!important; font-size: 12pt!important; font-weight: bold!important; }
+.appfont-placeholder {font-family:arial!important; font-size: 12pt!important; font-style: italic!important; font-weight: unset!important; }
+.appfont-largebutton-b {font-family:arial!important; font-size: 10pt!important; font-weight: bold!important; }
+.appfont-largebutton {font-family:arial!important; font-size: 10pt!important; }
+.appfont-button {font-family:arial!important; font-size: 11pt!important; font-weight: bold!important; }
+.appfont-small-button {font-family:arial!important; font-size: 9pt!important; font-weight: bold!important; }
+
+.horizontal-centered { position: absolute; left: 50%; transform: translateX(-50%); } /* 수평 가운데 정렬 */
+.vertical-centered { position: absolute; top: 50%; transform: translateY(-50%); } /* 수직 가운데 정렬 */
+.vertical-centered-r { position: relative; top: 50%; transform: translateY(-50%); } /* 수직 가운데 정렬 */
+.horizontal-centered2 { left:0; right:0; margin-left:auto; margin-right:auto; } /* 가로 중앙 정렬 */ 
+.vertical-centered2 { top: 0; bottom:0; margin-top:auto; margin-bottom:auto; } /* 세로 중앙 정렬 */
+
+.div-vertical-33{ float:left; width:100%; height: 33.3%;}   /* 영역 분할 수직 33.3% */
+.div-vertical-25{ float:left; width:100%; height: 25%;}   /* 영역 분할 수직 25% */
+.div-vertical-66{ float:left; width:100%; height: 66.6%;}   /* 영역 분할 수직 66.6% */
+.div-vertical-50{ float:left; width:100%; height: 50%;} /* 영역 분할 수평 1/2 */
+
+.div-vertical-26{  width:100%; height: 26%;}   /* 영역 분할 수직 28% */
+.div-vertical-74{  width:100%; height: 74%;}   /* 영역 분할 수직 72% */
+
+.div-vertical-25{ float:left; width:100%; height: 25%;}   /* 영역 분할 수직 33.3% */
+.div-vertical-75{ float:left; width:100%; height: 75%;}   /* 영역 분할 수직 66.6% */
+
+.div-horizontal-33{ float:left; width:33.3%; height: 100%;} /* 영역 분할 수평 33.3% */
+.div-horizontal-66{ float:left; width:66.6%; height: 100%;} /* 영역 분할 수평 66.6% */
+
+.div-horizontal-20{ float:left; width:20%; height: 100%;} /* 영역 분할 수평 20% */
+.div-horizontal-40{ float:left; width:40%; height: 100%;} /* 영역 분할 수평 40% */
+.div-horizontal-60{ float:left; width:60%; height: 100%;} /* 영역 분할 수평 60% */
+
+.div-horizontal-49{ float:left; width:49.7%; height: 100%;} /* 영역 분할 수평 1/2 */
+.div-horizontal-50{ float:left; width:50%; height: 100%;} /* 영역 분할 수평 1/2 */
+
+.right-icon{right: 0; display: inline-block;}
+.left-icon{left: 1em;}
+
+hr { border-top: 1px solid #8074B0 !important; }
+.iScrollIndicator { background: #2B1E5E!important; };
+.swiper-slide{ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.ui-popup-container, .ui-popup { height: 98%; width: 100%; position: absolute; box-shadow: 0 0 rgba(0,0,0,1)!important;}
+
+.header { position: absolute; z-index: 3; background-color:#e9e9e9; height:48px; width:100%; top:0; left:0; text-align: center; border-bottom:2px solid #2c6497; }
+.form-group{ margin: 5px 0; width: 100%; display: inline-block; position: relative; }
+
+.trans-button{ background-color: transparent!important; border:none!important; margin: 0; box-shadow: none!important; padding-left: 0; padding-right: 0; } /* 투명버튼 */
+.ui-checkbox{ position: relative!important; min-height: 1px; /* float: left; */ margin: 0!important; } /* check box */
+.ui-checkbox>input{ opacity: 0; }
+.ui-checkbox>label>.icons{ top:unset; left:.466em; }
+.ui-checkbox>label{ font-weight: unset!important; border-style: unset!important; padding: 0; }
+.ui-checkbox-off:after{ background-color: #a1a1a1 !important; border: none; }
+.ui-checkbox-on:after{ background-color: #179a70 !important; }
+
+.ui-radio { display: inline; }
+.ui-radio input { position: relative!important; width: unset!important; height: unset!important; left: unset!important; }
+
+input[type=radio] { margin-left: 10px!important; }
+.type-textarea { height: 46px!important; box-shadow: none!important; }
+
+.btn-grp { position: absolute; margin-top: 30px;}
+
+::-webkit-input-placeholder { color: #c5c5c5; }
+:-moz-placeholder { color: #c5c5c5; opacity:1; }
+::-moz-placeholder { color: #c5c5c5; opacity:1; }
+:-ms-input-placeholder { color:  #c5c5c5; }
+::placeholder { color: #c5c5c5; opacity: 1; }
+
+/* 이미지, 아이콘 */
+.img-title { background-image: url('../img/sign/Title@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:192px; height:179px; transition: all .25s; }
+.ico-email { background-image: url('../img/sign/Email@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:32px; height:32px; transition: all .25s; }
+.ico-password { background-image: url('../img/sign/Password@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:32px; height:32px; transition: all .25s; }
+.img-titlelogo { background-image: url('../img/sign/Title-logo.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:141px; height:36px; transition: all .25s; }
+.img-profile { background-image: url('../img/sign/Profile@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:104px !important; height:104px !important; transition: all .25s; }
+
+.ico-back-w { background-image: url('../img/sign/Back-w@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:16px; height:16px; transition: all .25s; }
+.ico-set-w { background-image: url('../img/main/Set-w@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:3px; height:15px; transition: all .25s; }
+
+.ico-back-b { background-image: url('../img/main/Back-b@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:16px !important; height:16px; transition: all .25s; }
+.ico-set-b { background-image: url('../img/main/Set-b@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:3px; height:15px; transition: all .25s; }
+.ico-title-main { background-image: url('../img/main/Title-main@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:107px; height:23px; transition: all .25s; }
+
+.img-recommend { background-image: url('../img/main/Recommend@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:48px !important; height:60px; transition: all .25s; }
+.img-public-toilet { background-image: url('../img/main/Public-toilet@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:48px !important; height:60px; transition: all .25s; }
+.img-free-wifi { background-image: url('../img/main/Free-wifi@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:48px !important; height:60px; transition: all .25s; }
+.img-tradi-market { background-image: url('../img/main/Tradi-market@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:48px !important; height:60px; transition: all .25s; }
+
+.ico-rating-fill { background-image: url('../img/main/Rating-fill@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:14px; height:13px; transition: all .25s;}
+.ico-rating-empty { background-image: url('../img/main/Rating-empty@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:14px; height:13px; transition: all .25s;}
+
+.ico-add { background-image: url('../img/recommand/add@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:16px; height:16px; transition: all .25s; }
+.ico-location { background-image: url('../img/recommand/Location@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:16px; height:16px; transition: all .25s; }
+.ico-main-fab { background-image: url('../img/main/Main-fab@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:64px !important; height:64px; transition: all .25s; }
+
+.ico-rating-fill-l { background-image: url('../img/recommand/Rating-fill-l@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:24px; height:23px; transition: all .25s;}
+.ico-rating-empty-l { background-image: url('../img/recommand/Rating-empty-l@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:24px; height:23px; transition: all .25s;}
+
+.ico-dropdown { background-image: url('../img/recommand/Dropdown@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:10px; height:7px; transition: all .25s;}
+.ico-close { background-image: url('../img/recommand/Close@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:8px; height:8px; transition: all .25s;}
+
+.ico-send { background-image: url('../img/content/send@2x.png'); background-size: contain; background-repeat:no-repeat; position: absolute; width:48px; height:48px; transition: all .25s;}

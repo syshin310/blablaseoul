@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'self' data: gap: https://ssl.gstatic.com; media-src *"/>
+    
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" type="text/css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" type="text/css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/daterangepicker.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.loading.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/blablaseoul.css">
+    <link rel="stylesheet" type="text/css" href="css/sign.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/recommand.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <title>Hello World</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div data-role="page" id="page-recommand" data-theme="f">
+        <div id="recommand-content" class="">
+            <div id="recommand-header" class="recommand_header background-color-darkpurple">
+                <div class="div-horizontal-20">
+                    <button id="r-back" class="trans-button vertical-centered ico-back-w"></button>
+                </div>
+                <div class="div-horizontal-60 appfont-largebody appcolor-white">
+                    <div id="r-title" class="titlelogo vertical-centered horizontal-centered2 img-titlelogo"></div>
+                </div>
+                <div class="div-horizontal-20">
+                    <div id="r-next" class="vertical-centered appfont-secondarybody appcolor-white" data-langNext="next">next</div>
+                </div>
+            </div>
+            <div class="recommand-body">
+                <div class="recommand-container">
+                    <div class="recommand-swiper-container">
+                        <div class="recommand-wrapper swiper-wrapper">
+                            <div class="swiper-slide" data-hash="slide1" id="recommand-first-slide">
+                                <div id="recommand-first-scroll" class="background-color-white">
+                                    <div id="recommand-first-scroller">
+                                        <div class="recommand-note login-form">
+                                            <div id="recommand-note-picture" class="form-group">
+                                                <div class="appfont-secondarybody appcolor-darkpurple" id="recommand-note-picture-descript"><div id="recommand-note-picture-descript-val" class="" data-langAddPicture="addPicture"></div></div>
+                                                <div id="recommand-note-picture-view" class="note-title background-color-lightpurple appfont-largebutton"></div>
+                                                <div id="recommand-note-picture-add"class="vertical-centered ico-add"></div>
+                                            </div>
+                                            <div id="recommand-note-comment" class="form-group">
+                                                <textarea id="recommand-note-text" rows="5" cols="40" placeholder="your recommend here.." class="appfont-secondarybody" data-langPhRecommand="phRecommand"></textarea>
+                                            </div>
+                                            <div id="recommand-note-location" class="form-group">
+                                                <input type="text" class="appfont-secondarybody appcolor-darkpurple border-color-darkpurple" value="" placeholder="place search.." id="recommand-input-location" data-langPhPlace="phPlace"/>
+                                                <div class="ico vertical-centered ico-location"></div>
+                                            </div>
+                                            <div id="recommand-note-map" class="form-group">
+                                                <div id="recommand-map"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-hash="slide2" id="recommand-second-slide">
+                                <div id="recommand-second-scroll" class="background-color-white">
+                                    <div id="recommand-second-scroller">
+                                        <div class="recommand-note login-form">
+                                            <div id="recommand-title" class="appcolor-darkpurple appfont-largebody" data-langRating="rating">Rating</div>
+                                            <div id="recommand-note-rating-local" class="form-group appfont-body">
+                                                <div class="rating-grp vertical-centered rating-recommand">
+                                                    <ul id="recommand-rating-local">
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="note-title appcolor-darkpurple vertical-centered" data-langLocal="local">LOCAL</div>
+                                            </div>
+                                            <div id="recommand-note-rating-popular" class="form-group appfont-body">
+                                                <div class="rating-grp vertical-centered rating-recommand">
+                                                    <ul id="recommand-rating-popular">
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                        <li><div class="vertical-centered ico-rating-empty-l"></div></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="note-title appcolor-darkpurple vertical-centered" data-langPopular="popular">POPULAR</div>
+                                            </div>
+                                            <hr/>
+                                            <div id="recommand-title" class="appcolor-darkpurple appfont-largebody" data-langPrice="price">Price</div>
+                                            <div id="recommand-note-price" class="form-group appfont-body">
+                                                <input type="text" id="recommand-price" name="price" value="" />
+                                            </div>
+                                            <div id="recommand-title" class="appcolor-darkpurple appfont-largebody" data-langDate="date">Date</div>
+                                            <div id="recommand-note-date" class="form-group appfont-body appcolor-darkpurple">
+                                                <input type="text" id="recommand-date" name="dates" readonly="true" placeholder="Dates" data-langDates="dates" style="padding-left : 0;">
+                                            </div>
+                                            <div id="recommand-title" class="appcolor-darkpurple appfont-largebody" data-langLanguage="language">Languages</div>
+                                            <div id="recommand-language" class="form-group">
+                                                <div class="appfont-secondarybody appcolor-darkpurple border-color-darkpurple" id="recommand-language-selector">
+                                                    <div id="recommand-language-val" class="vertical-centered" data-langLanguage="language">제공언어</div>
+                                                </div>
+                                                <div class="vertical-centered ico-dropdown right-icon" style="right: 1.5em;"></div>
+                                                <ul id="recommand-language-list" class="appfont-body appcolor-darkpurple">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/ion.rangeSlider.min.js" type="text/javascript"></script>
+    <script src="js/moment.min.js" type="text/javascript"></script>
+    <script src="js/daterangepicker.js" type="text/javascript"></script>
+    <script src="js/jquery.url.js"></script>
+    <script src="js/jquery.loading.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/markerclusterer.js"></script>
+    <script src="js/iscroll-probe.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/webtoolkit.base64.js"></script>
+    <script src="js/blablaseoul-dataset.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/language-pack.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/sign.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/recommand.js" type="text/javascript"></script>
+    <script src="js/content.js" type="text/javascript"></script>
+    <script src="js/rating.js" type="text/javascript"></script>
+</body>
+</html>

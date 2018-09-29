@@ -1,0 +1,37 @@
+#page-sign{ position: absolute; /* background-color:#fff;  */overflow: hidden; }
+#sign-content{ position: absolute; z-index: 1;	height:100%; left: 0; width: 100%; padding:0; margin:0; overflow: hidden; background-size: cover; background-repeat:no-repeat; background-position:center center; background-image: url('../img/sign/background.png');}
+.sign-body{ width: 100%; height: 100%; padding: 48px 0px 0px 0px; }
+.sign_header{ position: absolute; z-index: 3; height:48px; width:100%; top:0; left:0; text-align: center; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.16), 0 0 5px 2px rgba(0,0,0,0.08);}
+.sign-swiper-container{ width: 100%; height: 100%; position: relative;}
+
+/* start SIGNIN slide area */
+.sign-title, #signin-title-main{ position: relative; }
+.sign-view{ position: absolute; width:100%; top:48px; bottom: 0px; }
+.signin_box_wrap{ overflow: hidden; width: 100%; max-width: 350px; margin: 0 auto; top: 0; bottom: 48px; position: absolute; }
+.sign-info{ float: unset !important; width : 100%; max-width: 350px !important; padding:0; border-radius: 0; background-color: transparent; text-align: center; margin-top:5px;}
+.sign-info>div{ width:100%; margin: 5px 0 5px 0; }
+#signin-btn-signin{ margin-top: 50px; width: 100%; height: 48px; max-width: 350px; background-color: rgb(175, 163, 230)  !important; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);}
+#signin-btn-signup{ width: 100%; height: 48px; bottom: 0; position: absolute; border-radius:0 !important;}
+
+#signin-info-email>div, #signin-info-password>div{ box-shadow: none; border:none; border-radius: 0; margin: 0; left: 1em;}
+#signin-info-email>div>input:focus, #signin-info-password>div>input:focus{ border: 1px solid #8074B0 !important; }
+#signin-info-email>div>input, #signin-info-password>div>input{ padding-left: 50px !important; min-height: 3.2em !important; border: none; text-decoration: none; border-radius: 25px; }
+#signin-info-email>label, #signin-info-password>label{ left: 5px; right:unset; }
+/* end SIGNIN slide area */
+
+/* start SIGNUP slide area */
+#signup-scroll { position: absolute; z-index: 1; left: 0; top:0; bottom:0; width: 100%; overflow: hidden; }
+#signup-scroller {	position: absolute;	z-index: 1;	-webkit-tap-highlight-color: rgba(0,0,0,0);	width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none;}
+
+#signup-btn-signup{ margin-bottom: 20px; width: 100%; height: 48px; max-width: 350px; z-index: 2; bottom: 0; background-color: rgb(175, 163, 230) !important; position: absolute; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);}
+#signup-profile{ display: inline-block; position: relative; background-size: cover; background-repeat:no-repeat; background-position:center center; width:104px; height:104px; transition: all .25s; border-radius: 50%; margin-bottom: 20px;}
+#signup-info-email>div, #signup-info-password>div, #signup-info-password-chk>div{ box-shadow: none; border:none; border-radius: 0; margin: 0;  left: 1em;}
+#signup-info-email>div>input:focus, #signup-info-password>div>input:focus, #signup-info-password-chk>div>input:focus{ border: 1px solid #8074B0 !important; }
+#signup-info-email>div>input, #signup-info-password>div>input, #signup-info-password-chk>div>input{ padding-left: 50px !important; min-height: 3.2em !important; border: none; text-decoration: none; border-radius: 25px; }
+#signup-info-email>label, #signup-info-password>label, #signup-info-password-chk>label{ left: 5px; right:unset; }
+#signup-country-val, #signup-language-val{ right: 0; }
+#signup-language {margin-top: 20px;}
+#signup-back{z-index: 10; padding: 0; left: 0.5em;}
+.signup_box_wrap{ overflow: hidden; width: 100%; max-width: 350px; margin: 0 auto; top: 48px; position: relative; }
+.signup_box_wrap>div{ text-align: center; margin: 30px 0;}
+/* end SIGNUP slide area */

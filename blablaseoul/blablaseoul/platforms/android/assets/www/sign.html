@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'self'; img-src 'self' data: gap: https://ssl.gstatic.com;  style-src 'self' 'unsafe-inline'; media-src *"/>
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.loading.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/blablaseoul.css">
+    <link rel="stylesheet" type="text/css" href="css/sign.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+</head>
+
+<body>
+    <div data-role="page" id="page-sign" data-theme="f">
+        <div id="sign-content" class="">
+            <div class="sign-swiper-container">
+                <div class="sign-wrapper swiper-wrapper">
+                        <div class="swiper-slide" data-hash="slide1" id="signin-slide">
+                        <div class="sign-view">
+                            <div class="signin_box_wrap horizontal-centered">
+                                <!-- 로그인 영역 -->
+                                <div class="sign-title">
+                                    <div id="signin-title-main" class="horizontal-centered img-title"></div>
+                                    <div id="signin-title-sub" class=""></div>
+                                </div>
+                                <div class="sign-info vertical-centered">
+                                    <div id="signin-info-email" class="form-group">
+                                        <input type="text" class="appfont-secondarybody appcolor-white background-color-lightpurple-opacity" value="" placeholder="이메일 입력해주세요" id="signin-input-email" data-langPhEmail="phEmail"/>
+                                        <div class="vertical-centered ico-email"></div>
+                                    </div>
+                                    <div id="signin-info-password" class="form-group">
+                                        <input type="password" class="appfont-secondarybody appcolor-white background-color-lightpurple-opacity" value="" placeholder="패스워드를 입력해주세요" id="signin-input-password" data-langPhPw="phPw"/>
+                                        <div class="vertical-centered ico-password"></div>
+                                    </div>
+                                    <button id="signin-btn-signin" type="button" class="trans-button appfont-button appcolor-darkpurple" data-langSignin="signin">로그인</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="signin-btn-signup" type="button" class="trans-button appfont-button appcolor-white" data-langSignup="signup">회원가입</button>
+                    </div>
+                    <div class="swiper-slide" data-hash="slide2" id="signup-slide">
+                        <div id="sign-header" class="sign_header background-color-darkpurple">
+                            <div class="div-horizontal-20">
+                                <button id="signup-back" class="trans-button vertical-centered ico-back-w" ></button>
+                            </div>
+                            <div class="div-horizontal-60 appfont-largebody appcolor-white">
+                                <div class="titlelogo vertical-centered horizontal-centered2 img-titlelogo"></div>
+                            </div>
+                            <div class="div-horizontal-20">
+                                <div id="signup-set" class="vertical-centered ico-setting-wheel"></div>
+                            </div>
+                        </div>
+                        <div class="sign-body">
+                            <div id="signup-scroll">
+                                <div id="signup-scroller">
+                                    <div class="signup_box_wrap horizontal-centered-2">
+                                        <div><span id="signup-guidance" class="list-name appcolor-white appfont-body horizontal-centered2"></span></div>
+                                        <div class="sign-info">
+                                            <div id="signup-profile" class="img-profile horizontal-centered2 form-group"></div>
+                                            <div id="signup-info-email" class="form-group">
+                                                <input type="email" class="appfont-secondarybody appcolor-white background-color-lightpurple-opacity" value="" placeholder="아이디를 입력해주세요" id="signup-input-email" data-langPhEmail="phEmail"/>
+                                                <div class="vertical-centered ico-email"></div>
+                                            </div>
+                                            <div id="signup-info-password" class="form-group">
+                                                <input type="password" class="appfont-secondarybody appcolor-white background-color-lightpurple-opacity" value="" placeholder="패스워드를 입력해주세요" id="signup-input-password" data-langPhPw="phPw"/>
+                                                <div class="vertical-centered ico-password"></div>
+                                            </div>
+                                            <div id="signup-info-password" class="form-group">
+                                                <input type="password" class="appfont-secondarybody appcolor-white background-color-lightpurple-opacity" value="" placeholder="패스워드를 입력해주세요" id="signup-input-password-chk" data-langPhSignupCheck="phsignupcheck"/>
+                                                <div class="vertical-centered ico-password"></div>
+                                            </div>
+                                            <div id="signup-language" class="form-group">
+                                                <div class="appfont-secondarybody appcolor-white border-color-lightpurple" id="signup-language-selector" style="padding-left: 5em !important; border-bottom: 1px solid #8074B0 !important; text-align: right; min-height: 2.2em;">
+                                                    <div id="signup-language-val" class="vertical-centered" data-langSelect="select">선택</div>
+                                                </div>
+                                                <div class="note-title appcolor-white appfont-largebutton vertical-centered" data-langLanguage="language">언어</div>
+                                            </div>
+                                            <div id="signup-country" class="form-group">
+                                                <div class="appfont-secondarybody appcolor-white border-color-lightpurple" id="signup-country-selector" style="padding-left: 5em !important; border-bottom: 1px solid #8074B0 !important; text-align: right; min-height: 2.2em;">
+                                                    <div id="signup-country-val" class="vertical-centered" data-langSelect="select">선택</div>
+                                                </div>
+                                                <div class="note-title appcolor-white appfont-largebutton vertical-centered" data-langCountry="country">국가</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="signup-btn-signup" type="button" class="trans-button appfont-button appcolor-darkpurple horizontal-centered" data-langSignup="signup">회원가입</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/jquery.url.js"></script>
+    <script src="js/jquery.loading.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/iscroll-probe.js" type="text/javascript"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/webtoolkit.base64.js"></script>
+    <script src="js/blablaseoul-dataset.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/language-pack.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/sign.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/content.js" type="text/javascript"></script>
+    <script src="js/rating.js" type="text/javascript"></script>
+</body>
+</html>

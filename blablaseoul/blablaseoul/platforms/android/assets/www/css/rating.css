@@ -1,0 +1,45 @@
+#page-rating{ position: absolute; /* background-color:#fff;  */overflow: hidden;}
+#rating-content{ position: absolute; z-index: 1;	height:100%; left: 0; width: 100%; padding:0; margin:0; overflow: hidden; }
+.rating-body{ width: 100%; height: 100%; padding: 48px 0px 0px 0px; }
+.rating_header{ position: absolute; z-index: 3; height:48px; width:100%; top:0; left:0; text-align: center; }
+.rating-container{ position: absolute; width:100%; top:48px; bottom: 0px; }
+#rt-back{z-index: 10; padding: 0; left: 0.5em;}
+#rt-set{z-index: 10; padding: 0; right: 0.5em;}
+#rating-scroll { position: absolute; z-index: 1; left: 0; top:0; bottom:0; width: 100%; overflow: hidden; }
+#rating-scroller { position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none;}
+
+#rt-title { white-space: nowrap; text-overflow: ellipsis; width: 100%; overflow: hidden; }
+
+/* start RATING slide area */
+.rating-note{ float: unset !important; padding:0 30px; margin: 20px auto; border-radius: 0; background-color: transparent; text-align: center; }
+.rating-note>div{ width:100%; padding: 0px 0 15px 0;}
+.rating-note div div{ box-shadow: none; border:none; border-radius: 0; margin: 0; }
+.rating-note div div input:focus{color: #2B1E5E; border-bottom: 2px solid #2B1E5E !important; }
+.rating-note div div input{ border-bottom: 1px solid #8074B0 !important; text-align: left; padding-left: 2em;}
+.rating-note div label { left: 5px; right:unset; }
+
+.rating-content { left : 7em; }
+.comment-rating-content{ right: 0.7em; position: relative; float: right; }
+.rating-rating{ list-style:none; margin:0; padding:0; }
+#rating-comment-list>li { margin: 15px auto;}
+.rating-rating>li { margin: 15px; border : 0; float: left;}
+#rating-comment-list>li { width: 100%; }
+/* end CONTENT slide area */
+
+#rating-title{ text-align: left; position: absolute; width: auto;}
+.rating-grp-sub{ display: flex; position: relative; }
+.rating-grp-sub>.rating-grp { position: relative; left: 10em; }
+.rating-grp-sub>.rating-grp>ul>li { margin: 10px; }
+.comment-rating-content>ul>li { margin: 10px; }
+.rating-grp-sub>.note-title { left : 2em; }
+#rating-input-comment { height: 48px; width: 85%; padding: 0 20px; position: absolute; border: 1px solid #8074B0 !important; border-radius: 25px;}
+#rating-input-comment:focus{ border: 1px solid #2B1E5E !important;}
+#rating-note-comment { height: 48px; display: inline-block; }
+.comment-lbox{ float: left; width:20%; padding-top : 10px; padding-bottom: 10px; overflow: hidden; word-wrap: break-word; }
+.comment-cbox{ float: left; width:80%; padding-top : 10px; padding-bottom: 10px; text-align: left; overflow: hidden; word-wrap: break-word; }
+.comment-profile-img{ border-radius: 50% !important; width: 56px; height: 56px; background-image: url("../img/profile.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; }
+#rating-myrating-title, #rating-comment-title { text-align: left; }
+
+
+/* start RATING slide area */
+/* end RATING slide area */
