@@ -1,6 +1,10 @@
 ﻿var scrollRating;
 var next_rating_list_no;
 
+var scrollRatingListPoint = 0;
+var scrollRatingListEnd = false;
+var scrollRatingListTop = false;
+
 //initialization of the RATING page
 function initializationRating(){
     /* INITIALIZATION OF THE RATING VIEW */
@@ -93,6 +97,30 @@ function setRatingControlEvents(){
         ratingDataSet.ratingText = $('#rating-input-comment').val();
         reqRatingRatingSend(ratingDataSet);
     });
+
+    scrollRating.on('scrollEnd', function(){
+        if(this.y <= this.maxScrollY){
+            scrollRatingListTop = false;
+            if(scrollRatingListEnd == true){
+                if(next_rating_list_no > -1)
+                    reqPlaceRatingInfo(place_no);
+                scrollRatingListEnd = false;
+            }
+            else
+                scrollRatingListEnd = true;
+        }
+        else if(this.y == 0){
+            scrollRatingListEnd = false;
+            if(scrollRatingListTop == true){
+                next_rating_list_no = 0;
+                $('#rating-comment-list').empty();
+                reqPlaceRatingInfo(place_no);
+                scrollRatingListTop = false;
+            }
+            else
+                scrollRatingListTop = true;
+        }
+    });
     /* END CONTROLS OF THE RATING SLIDE */
 }
 
@@ -171,6 +199,11 @@ function reqPlaceRatingInfo(place_no){
             
 
             if(data.result == "ok"){
+                if(data.nextListNo == 0)
+                    next_rating_list_no = -1;
+                else
+                    next_rating_list_no = data.nextListNo;
+                    
                 $.each(data.ratingList, function(key,value) {
                     if(value.rating_usr_no == userDataset.usr_no){
                         bRating = true;
