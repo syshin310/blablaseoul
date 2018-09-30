@@ -3,5 +3,6 @@
 
 Hybrid 앱 소스
 Android 소스 경로 : blablaseoul/blablaseoul/blablaseoul/platforms/android
+
 APK 경로 : blablaseoul/blablaseoul.apk
 Android OS 6.0이상
