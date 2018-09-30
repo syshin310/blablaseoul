@@ -159,6 +159,8 @@ function reqRatingRatingSend(rating){
 
             if(data.result == "ok"){
                 alert("rating complated");
+                $('#rating-comment-list').empty();
+                reqPlaceRatingInfo(place_no);
                 $("#rating-myrating-title").hide();
                 $("#rating-note-rating-my").hide();
                 $("#rating-note-rating-my-sub").hide();
