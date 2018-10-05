@@ -507,6 +507,7 @@ function reqTypePlaceInfo(no){
 //CONTENT page show
 $(document).on(events, '#page-content', function (e) {
     console.log("page-content: " + e.type);
+    bRating = false;
     var url = $.url(document.location);
     place_no = decodeURIComponent(url.param("place_no"));
     initializationContent();
